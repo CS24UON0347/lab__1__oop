@@ -4,3 +4,9 @@ __pycache__/
 *.pyc
 venv/
 .venv/
+git init
+ git add .gitignore 
+ git commit -m "Add .gitignore for editor and python files"
+ git add course.py
+ git commit -m "Add Course class and load_course function"
+ git commit -m "Add main program and sample marks"
