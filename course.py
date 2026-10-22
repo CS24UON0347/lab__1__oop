@@ -45,6 +45,10 @@ class Course:
         """Return name, number of students and average."""
         return f"{self.name}: {len(self)} students, average {self.average():.1f}"
 
+    def remove_student(self, name: str) -> None:
+        if name not in self.marks:
+            raise keyError(f"No student named{name}")
+        del self.marks[name]
 
 def load_course(name: str, filename: str) -> Course:
     """Load students from a file. Bad lines are skipped."""
